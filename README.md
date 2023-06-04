@@ -2,13 +2,15 @@
 type: "project" # DON'T TOUCH THIS ! :)
 date: "2020-05-16" # Date you first upload your project.
 # Title of your project (we like creative title)
-title: "This is an example project page which serves as a template"
+title: Mechanism of delusion and hallucination in schizophrenia based on the quadripartite model
+
+
 
 # List the names of the collaborators within the [ ]. If alone, simple put your name within []
-names: [Samuel Guay, Pierre Bellec]
+names: [MengHuaKuo]
 
 # Your project GitHub repository URL
-github_repo: https://github.com/PSY6983-2021/project_template
+github_repo: [https://github.com/PSY6983-2021/project_template](https://github.com/MengHuaKuo/KuoMengHua_project)
 
 # If you are working on a project that has website, indicate the full url including "https://" below or leave it empty.
 website:
@@ -31,9 +33,7 @@ image: ""
 
 ### Background
 
-Inspired by the [Recurse Centre](https://www.recurse.com/) initiative (formally known as the "hacker school"), Brainhack School was established in 2018 with the mission to train students from multidisciplinary backgrounds to a panoply of reproducible tools for neural data science, using a project-based approach. Following an initial 3-weeks long pilot, a 4th week was added with an intensive bootcamp, so that students could choose what tools to learn more deeply in their projects. As the course became integrated in standard curriculum at different universities, the formula seemed to be working. In order to streamline the different stages of the project, some standard template and milestones needed to be incorporated in a github-based workflow. The "project template" project (which is also our first BHS meta-project) aims at establishing such a standardized template. You can check the following [video](https://youtu.be/PTYs_JFKsHI) where Pierre Bellec gives an overview of the Brainhack school.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PTYs_JFKsHI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Delusion and hallucination are common symptoms in schizophrenia (SCZ). Despite of different constructs composed with, false belief and false perception still share some similar features to an extent. For instance, they are both characterized by the breakdown of corollary discharge, deficit of monitoring control, and aberrant salience function. Several researches also demonstrated collaborative neural underpinning regarding delusions and hallucinations. The intrinsic networks based on the triple network theory such as salience network (SAL), default mode network (DMN) and central executive network (CEN) are recruited during delusional or hallucinatory phenomena, reflecting some brain modules might be overlapped when the symptoms arise. A quadripartite model, which supports most of current evidences and provides a storyline trying to explain the process during hallucinations, might also be interpretable for delusions due to its involvement of the aforementioned triple network and hippocampus. Nonetheless, it still falls shorts of explaining the underlying mechanisms of both hallucination and delusion. Moreover, the precise prediction of these two symptoms is not yet completed nowadays. We hypothesize that the crucial differences between delusions and hallucinations might provide as key components for machine-learning techniques to distinguish delusional or hallucinatory phenomena.
 
 ### Tools
 
@@ -44,17 +44,17 @@ The "project template" project will rely on the following technologies:
 
 ### Data
 
-Ultimately, the project template will be used by all BHS participants. Data on the different projects will be aggregareted on the [following page](https://psy6983.brainhackmtl.org/project). This will serve as an additional example gallery in the years to come for future brainhack school students. Many reports from [BHS 2020](https://github.com/brainhack-school2020) already used this template.
+In this study, ensemble empirical mode decomposition (EEMD) was employed on voxel-wised resting-state functional Magnetic Resonance Imaging (rs-fMRI) data with regions of interest (ROI) according to the quadripartite model. We then trained multiple classifiers with the extracting features from the intrinsic model functions (IMFs) in order to figure out the discrepancy of delusions and hallucinations among brain works for future analysis. 
 
 ### Deliverables
 
 At the end of this project, we will have:
- - The current markdown document, completed and revised.
- - A gallery of the student projects at Brainhack 2020.
- - Instructions on the website about how to submit a pull request to the [brainhack school website](https://github.com/PSY6983-2021) in order to add the project description to the website.
+ - Whether the absence of disease, delusion or hallucination could be predicted by machine-learning approaches
+ - What fueatures are appropriate for predicting each target
 
 ## Results
 
+  Only analysis for ROI of hippocampus is currently completed. It is showed that whether one has schizophrenia or not could only be predicted by instantaneous amplitude and instantaneous frequency. NaiveBayes model has best performance for discriminateing delusion and hallucination with original and IMF2 singal respecitively. 
 ### Progress overview
 
 The project was swiftly initiated by P Bellec, based on the existing template created in 2019 by Tristan Glatard and improved by different students. It was really not that hard. Community feedback is expected to lead to rapid further improvements of this first version.
