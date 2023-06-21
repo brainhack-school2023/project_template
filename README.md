@@ -1,27 +1,19 @@
 ---
 type: "project" # DON'T TOUCH THIS ! :)
 date: "2020-05-16" # Date you first upload your project.
-# Title of your project (we like creative title)
-title: Mechanism of delusion and hallucination in schizophrenia based on the quadripartite model
-
-
-
-# List the names of the collaborators within the [ ]. If alone, simple put your name within []
-names: [MengHuaKuo]
+# Mechanism of delusion and hallucination in schizophrenia based on the quadripartite model
+ [MengHuaKuo]
 
 # Your project GitHub repository URL
 github_repo: [https://github.com/PSY6983-2021/project_template](https://github.com/MengHuaKuo/KuoMengHua_project)
 
-# If you are working on a project that has website, indicate the full url including "https://" below or leave it empty.
-website:
 
 # List +- 4 keywords that best describe your project within []. Note that the project summary also involves a number of key words. Those are listed on top of the [github repository](https://github.com/PSY6983-2021/project_template), click `manage topics`.
 # Please only lowercase letters
-tags: [project, github, markdown, brainhack]
+tags: [res-fMRI, schizophrenia, hallucinations, delusions]
 
-# Summarize your project in < ~75 words. This description will appear at the top of your page and on the list page with other projects..
-
-summary: "Each project repository should have a markdown file explaining the background and objectives of the project, as well as a summary of the results, and links to the different deliverables of the project. Project reports are incorporated in the BHS [website](https://psy6983.brainhackmtl.org/project)."
+# Summarize 
+A total of 341 HC and 213 SCZ patients were recruited in this study. Ensemble empirical mode decomposition was employed to decompose voxel-wised resting-state functional Magnetic Resonance Imaging (rs-fMRI) data into intrinsic mode functions (IMFs) within regions according to the quadripartite model. We trained multiple classifiers with the various features extracting from the IMFs, including instantaneous frequency, amplitude, and phase, as well as mean frequency, amplitude, standard deviation and sample entropy of rs-fMRI data.
 
 
 ### Background
@@ -58,7 +50,6 @@ At the end of this project, we will have:
 ### Results
 
 In hippocampus, the detection of SCZ could be well predicted via original voxel-based rs-fMRI signal of instantaneous amplitude and frequency with the F1-socre of 1 by multiple models (e.g., KNN, logistic and SVM models). Furthermore, linear discriminant analysis model performed best in IMF4 of instantaneous frequency with the F1-score of 0.86 for detection of delusion; while logistic model performed ideally in IMF2 of sample entropy with the F1-score of 0.95 for detection of hallucination. Naive Bayse model with IMF2 of instantaneous frequency had the F1-score of 0.87 for predicting both symptoms.
-
 
 ## Conclusion and acknowledgement
 Our study shows the precise diagnosis for SCZ is feasible. In addition, the prediction of delusion and hallucination help to clarify the influence from one brain network to another, which might indirectly shed light on the network dynamics and structural connectivity.
