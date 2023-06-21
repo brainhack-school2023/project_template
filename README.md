@@ -23,13 +23,6 @@ tags: [project, github, markdown, brainhack]
 
 summary: "Each project repository should have a markdown file explaining the background and objectives of the project, as well as a summary of the results, and links to the different deliverables of the project. Project reports are incorporated in the BHS [website](https://psy6983.brainhackmtl.org/project)."
 
-# If you want to add a cover image (listpage and image in the right), add it to your directory and indicate the name
-# below with the extension.
-image: ""
----
-<!-- This is an html comment and this won't appear in the rendered page. You are now editing the "content" area, the core of your description. Everything that you can do in markdown is allowed below. We added a couple of comments to guide your through documenting your progress. -->
-
-## Project definition
 
 ### Background
 
@@ -38,9 +31,9 @@ Delusion and hallucination are common symptoms in schizophrenia (SCZ). Despite o
 ### Tools
 
 The "project template" project will rely on the following technologies:
- * Markdown, to structure the text.
- * The Hugo website framework which is used by the BHS website. This makes it possible to easily add the markdown project description to the website.
- * Adding the project to the website relies on github, through pull requests.
+ * fMRI
+ * Python
+ * Matlab
 
 ### Data
 
@@ -55,49 +48,19 @@ At the end of this project, we will have:
 ## Results
 
   Only analysis for ROI of hippocampus is currently completed. It is showed that whether one has schizophrenia or not could only be predicted by instantaneous amplitude and instantaneous frequency. NaiveBayes model has best performance for discriminateing delusion and hallucination with original and IMF2 singal respecitively. 
-### Progress overview
-
-The project was swiftly initiated by P Bellec, based on the existing template created in 2019 by Tristan Glatard and improved by different students. It was really not that hard. Community feedback is expected to lead to rapid further improvements of this first version.
 
 ### Tools I learned during this project
 
- * **Meta-project** P Bellec learned how to do a meta project for the first time, which is developping a framework while using it at the same time. It felt really weird, but somehow quite fun as well.
- * **Github workflow-** The successful use of this template approach will demonstrate that it is possible to incorporate dozens of students presentation on a website collaboratively over a few weeks.
- * **Project content** Through the project reports generated using the template, it is possible to learn about what exactly the brainhack school students are working on.
+ * **Python** Most of the scripts were run in Python and lots of new functions were learned during the process, expecially regarding machine learning techniques and statistical analysis.
+ * **Github workflow-** I am zeoro from the Github thing and somehow many challenges occured when I tried to aplly it. Due to it's a widely-used platform to share eveyone's contribution and knowledge, I am trying to improve my ability on this.
+ * **VS code** VS code helps me a lot when I tried run both jupyter notebooks and pure python scripts, saving a lot of time switching between multiple screens.
 
 ### Results
 
-#### Deliverable 1: report template
+In hippocampus, the detection of SCZ could be well predicted via original voxel-based rs-fMRI signal of instantaneous amplitude and frequency with the F1-socre of 1 by multiple models (e.g., KNN, logistic and SVM models). Furthermore, linear discriminant analysis model performed best in IMF4 of instantaneous frequency with the F1-score of 0.86 for detection of delusion; while logistic model performed ideally in IMF2 of sample entropy with the F1-score of 0.95 for detection of hallucination. Naive Bayse model with IMF2 of instantaneous frequency had the F1-score of 0.87 for predicting both symptoms.
 
-You are currently reading the report template! I will let you judge whether it is useful or not. If you think there is something that could be improved, please do not hesitate to open an issue [here](https://github.com/PSY6983-2021/project_template/issues/) and let us know.
-
-#### Deliverable 2: project gallery
-
-You can check out the [2020 BrainHack School project gallery](https://psy6983.brainhackmtl.org/project/)
-
-##### ECG pupilometry pipeline by Marce Kauffmann
-
-The repository of this project can be found [here](https://github.com/mtl-brainhack-school-2019/ecg_pupillometry_pipeline_kaufmann). The objective was to create a processing pipeline for ECG and pupillometry data. The motivation behind this task is that Marcel's lab (MIST Lab @ Polytechnique Montreal) was conducting a Human-Robot-Interaction user study. The repo features:
- * a [video introduction](http://www.youtube.com/watch/8ZVCNeX42_A) to the project.
- * a presentation [made in a jupyter notebook](https://github.com/mtl-brainhack-school-2019/ecg_pupillometry_pipeline_kaufmann/blob/master/BrainHackPresentation.ipynb) on the results of the project.
- * Notebooks for all analyses.
- * Detailed requirements files, making it easy for others to replicate the environment of the notebook.
- * An overview of the results in the markdown document.
-
-##### Other projects
-Here are other good examples of repositories:
-- [Learning to manipulate biosignals with python](https://github.com/mtl-brainhack-school-2019/franclespinas-biosignals) by François Lespinasse
-- [Run multivariate anaylysis to relate behavioral and electropyhysiological data](https://github.com/mtl-brainhack-school-2019/PLS_PV_Behaviour)
-- [PET pipeline automation and structural MRI exploration](https://github.com/mtl-brainhack-school-2019/rwickens-sMRI-PET) by Rebekah Wickens
-- [Working with PSG [EEG] data from Parkinson's patients](https://github.com/mtl-brainhack-school-2019/Soraya-sleep-data-in-PD-patients) by Cryomatrix
-- [Exploring Brain Functional Activation in Adolescents Who Attempted Suicide](https://github.com/mtl-brainhack-school-2019/Anthony-Gifuni-repo) by Anthony Gifuni
-
-#### Deliverable 3: Instructions
-
- To be made available soon.
 
 ## Conclusion and acknowledgement
+Our study shows the precise diagnosis for SCZ is feasible. In addition, the prediction of delusion and hallucination help to clarify the influence from one brain network to another, which might indirectly shed light on the network dynamics and structural connectivity.
 
-The BHS team hope you will find this template helpful in documenting your project. Developping this template was a group effort, and benefitted from the feedback and ideas of all BHS students over the years.
-
-You can also make submit your project to neurolibre https://neurolibre.org/. It is a preprint server for interactive data analyses. It is tailored for publishing interactive neuroscience notebooks that can seamlessly integrate data, text, code and figures.The submission instructions can be found here https://docs.neurolibre.org/en/latest/index.html and the jupyter book docs there https://jupyterbook.org/intro.html.
+I am grateful for the efforts from all of our instructors and TAs. The project enhanced a lot of hands-on skills and also offered me a chance to practice in actual.
