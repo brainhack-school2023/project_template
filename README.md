@@ -40,6 +40,7 @@ At the end of this project, we will have:
 ## Results
 
   Only analysis for ROI of hippocampus is currently completed. It is showed that whether one has schizophrenia or not could only be predicted by instantaneous amplitude and instantaneous frequency. NaiveBayes model has best performance for discriminateing delusion and hallucination with original and IMF2 singal respecitively. 
+![image](https://github.com/MengHuaKuo/KuoMengHua_project/assets/130176621/91413b75-ee47-43b4-9911-d3a7a4444841)
 
 ### Tools I learned during this project
 
